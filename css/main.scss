@@ -1,8 +1,8 @@
 $colors: (
     primary: #2d3436, 
-    primary-light: lighten(#ffa502, 40%), 
+    primary-light: lighten(#ff3d02, 40%), 
     primary-dark: darken(#ff4757, 40%), 
-    accent:  #FFC312,  
+    accent:  rgb(255, 93, 18),  
 );
 
 $padding : 15px;
@@ -27,6 +27,7 @@ body, html {
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    background: black;
    
     #background {
         clip-path: polygon(100% 0, 100% 83%, 41% 100%, 0 100%, 0 0);
@@ -133,7 +134,7 @@ main {
         }
 
         a {
-            color: color(primary-dark);
+            color: white;
             border-radius: $borders;
             text-decoration: none;
             text-transform: uppercase;
@@ -145,7 +146,7 @@ main {
             padding: $padding;
             transition: all .1s ease-in-out; 
         }
-        a:hover { transform: scale(1.1); 
+        a:hover { transform: scale(1.02); 
         }
     }
 }
